@@ -135,18 +135,18 @@ def get_lr(step):
 
 ### Initial Training (Steps 1-5000)
 
-```
-[Add your training logs here - showing periodic checkpoints and sample generations]
-
-Example format:
-[TRAIN] Step 1 | Loss: 10.123 | LR: 0.000010 | dt: 234.56ms | tok/sec: 8745.23
-[TRAIN] Step 500 | Loss: 5.234 | LR: 0.000500 | dt: 198.23ms | tok/sec: 10321.45
+Sample logs (entire logs in separate file):
+[TRAIN] Step 1 | Loss: 10.956 | LR: 0.000001 | dt: 97613.41ms | tok/sec:  20.98
+[TRAIN] Step 2 | Loss: 10.976 | LR: 0.000002 | dt: 1020.34ms | tok/sec:  2007.18
+...
+[TRAIN] Step 500 | Loss: 5.806 | LR: 0.000500 | dt: 1057.46ms | tok/sec:  1936.71
 [SAVE] Checkpoint saved at step 500
-Sample response: To be or not to be a great day ahead...
-
-[TRAIN] Step 1000 | Loss: 4.123 | LR: 0.000495 | dt: 201.34ms | tok/sec: 10198.76
-[SAVE] Checkpoint saved at step 1000
-Sample response: To be or not to be the first time...
+Sample response: To be or not to be, the'd but, on,
+.ates attend thou for
+ p ent parasite
+ myos, ' memoryARI tora
+ sharp like music
+[TRAIN] Step 501 | Loss: 5.704 | LR: 0.000500 | dt: 1034.02ms | tok/sec:  1980.62
 
 ...
 ```
@@ -156,12 +156,15 @@ Sample response: To be or not to be the first time...
 ```
 
 
-Example format:
+Sample logs (entire logs in separate file):
 [LOAD] Checkpoint loaded at step 5000
 Training resumed from step 5001
-[TRAIN] Step 5001 | Loss: 2.345 | LR: 0.000051 | dt: 195.67ms | tok/sec: 10456.89
-[TRAIN] Step 5050 | Loss: 2.298 | LR: 0.000050 | dt: 197.23ms | tok/sec: 10387.34
+[TRAIN] Step 5001 | Loss: 0.034 | LR: 0.000050 | dt: 1122.43ms | tok/sec:  1824.61
+[TRAIN] Step 5002 | Loss: 0.038 | LR: 0.000050 | dt: 1058.27ms | tok/sec:  1935.24
+...
+[TRAIN] Step 5050 | Loss: 0.048 | LR: 0.000050 | dt: 1052.91ms | tok/sec:  1945.08
 Training completed!
+
 ```
 
 ## 📁 Project Structure
