@@ -154,7 +154,7 @@ Sample response: To be or not to be the first time...
 ### Resume Training (Steps 5001-5050)
 
 ```
-[Add your resume training logs here]
+
 
 Example format:
 [LOAD] Checkpoint loaded at step 5000
@@ -252,6 +252,10 @@ print(tokenizer.decode(output[0]))
 ```
 torch>=2.0.0
 transformers>=4.30.0
+gradio
+tokenizers
+sentencepiece
+accelerate
 ```
 
 ## 💡 Key Features
